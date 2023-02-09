@@ -18,3 +18,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
     We'll use the Django Admin site to add some "real" book data. First we'll show you how to register the models 
     with the admin site, then we'll show you how to login and create some data. At the end of the article we will 
     show some of the ways you can further improve the presentation of the Admin site.  
+#5. Creating our home page  
+    We're now ready to add the code that displays our first complete page — a home page for the LocalLibrary website.
+    The home page will show the number of records we have for each model type and provide sidebar navigation links 
+    to our other pages. Along the way we'll gain practical experience in writing basic URL maps and views, 
+    getting records from the database, and using templates.  
