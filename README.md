@@ -23,7 +23,7 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
     The home page will show the number of records we have for each model type and provide sidebar navigation links 
     to our other pages. Along the way we'll gain practical experience in writing basic URL maps and views, 
     getting records from the database, and using templates.  
-#6. Generic list and detail views.
+#6. Generic list and detail views.  
     This tutorial extends our LocalLibrary website, adding list and detail pages for books and authors. 
     Here we'll learn about generic class-based views, and show how they can reduce the amount of code 
     you have to write for common use cases. We'll also go into URL handling in greater detail, 
