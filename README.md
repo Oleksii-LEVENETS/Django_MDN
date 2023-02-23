@@ -28,3 +28,8 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
     Here we'll learn about generic class-based views, and show how they can reduce the amount of code 
     you have to write for common use cases. We'll also go into URL handling in greater detail, 
     showing how to perform basic pattern matching.  
+#7. Sessions framework.  
+    This tutorial extends our LocalLibrary website, adding a session-based visit-counter to the home page. 
+    This is a relatively simple example, but it does show how you can use the session framework to provide 
+    persistent behavior for anonymous users in your own sites.
+
