@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookinstance List All Borrowed</title>
+</head>
+<body>
+
+  {% extends "catalog/base_generic.html" %}
+
+  {% block content %}
+      <h1>All Borrowed Books</h1>
+
+      {% if bookinstance_list %}
+      <ul>
+
+        {% for bookinst in bookinstance_list %}
+        <li class="{% if bookinst.is_overdue %}text-danger{% endif %}">
+          <a href="{% url 'catalog:book-detail' bookinst.book.pk %}">{{ bookinst.book.title }}</a>
+            ({{ bookinst.due_back }}) - Borrower username: {{ bookinst.borrower}}
+        </li>
+        {% endfor %}
+      </ul>
+
+      {% else %}
+        <p>There are no books borrowed.</p>
+      {% endif %}
+  {% endblock %}
+
+</body>
+</html>
