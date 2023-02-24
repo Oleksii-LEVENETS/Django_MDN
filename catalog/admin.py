@@ -53,7 +53,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
     For the BookInstance list view, add code to display the book, status, due back date, and id
     (rather than the default __str__() text).
     """
-    list_display = ('id', 'book', 'status', 'due_back',)
+    list_display = ('book', 'status', 'borrower', 'due_back', 'id')
     list_filter = ('status', 'due_back')
 
     fieldsets = (
@@ -61,7 +61,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
             'fields': ('book', 'imprint', 'id')
         }),
         ('Availability', {
-            'fields': ('status', 'due_back')
+            'fields': ('status', 'due_back', 'borrower',)
         }),
     )
     save_as = True
