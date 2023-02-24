@@ -31,7 +31,7 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
 #7. Sessions framework.  
     This tutorial extends our LocalLibrary website, adding a session-based visit-counter to the home page. 
     This is a relatively simple example, but it does show how you can use the session framework to provide 
-    persistent behavior for anonymous users in your own sites.
+    persistent behavior for anonymous users in your own sites.  
 #8. User authentication and permissions.  
     In this tutorial, we'll show you how to allow users to log in to your site with their own accounts, 
     and how to control what they can do and see based on whether or not they are logged in and their permissions.
