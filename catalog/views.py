@@ -49,6 +49,7 @@ class BookListView(generic.ListView):
 
 
 class AuthorListView(generic.ListView):
+    template_name = "catalog/author_list.html"
     model = Author
     paginate_by = 10
 
