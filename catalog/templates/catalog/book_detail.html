@@ -16,6 +16,16 @@
   <p><strong>ISBN:</strong> {{ book.isbn }}</p>
   <p><strong>Language:</strong> {{ book.language }}</p>
   <p><strong>Genre:</strong> {{ book.genre.all|join:", " }}</p>
+<hr>
+        <button type="button">
+            <a href="{% url 'catalog:book-update' pk=book.pk %}">Book Update</a>
+        </button>
+        <br />
+        <br />
+        <button type="button">
+            <a href="{% url 'catalog:book-delete' pk=book.pk %}">Book Delete</a>
+        </button>
+    <hr>
 
   <div style="margin-left:20px;margin-top:20px">
     <h4>Copies</h4>

@@ -14,6 +14,17 @@
   <p><strong>Name:</strong> {{ author.first_name }}</p>
   <p><strong>Surname:</strong> {{ author.last_name }}</p>
   <p>{{author.date_of_birth}} - {% if author.date_of_death %}{{author.date_of_death}}{% endif %}</p>
+    <hr>
+        <button type="button">
+            <a href="{% url 'catalog:author-update' pk=author.pk %}">Author Update</a>
+        </button>
+        <br />
+        <br />
+        <button type="button">
+            <a href="{% url 'catalog:author-delete' pk=author.pk %}">Author Delete</a>
+        </button>
+    <hr>
+
 
 <div style="margin-left:20px;margin-top:20px">
 <h4>Books</h4>
