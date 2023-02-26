@@ -25,7 +25,9 @@
                 <li>User: {{ user.get_username }}</li>
 
                 <li><a href="{% url 'catalog:my-borrowed' %}">My Borrowed</a></li>
-
+            <br />
+            <br />
+            <br />
                 <li><a href="{% url 'logout' %}?next={{ request.path }}">Log Out</a></li>
             <br />
             <br />
@@ -33,6 +35,11 @@
             <hr>
             Staff:
                 <li><a href="{% url 'catalog:all-borrowed-books' %}">All Borrowed</a></li>
+            <hr>
+                <li><a href="{% url 'catalog:author-create' %}">Author Create</a></li>
+            <br />
+                <li><a href="{% url 'catalog:book-create' %}">Book Create</a></li>
+            <hr>
             {% else %}
                 <li><a href="{% url 'login' %}?next={{ request.path }}">Log In</a></li>
             {% endif %}

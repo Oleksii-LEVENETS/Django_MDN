@@ -37,5 +37,11 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
     and how to control what they can do and see based on whether or not they are logged in and their permissions.
     As part of this demonstration, we'll extend the LocalLibrary website, adding login and logout pages, 
     and user- and staff-specific pages for viewing books that have been borrowed.  
+#9. Working with forms.  
+    In this tutorial, we'll show you how to work with HTML Forms in Django, and, in particular, the easiest way 
+    to write forms to create, update, and delete model instances. As part of this demonstration, we'll extend the 
+    LocalLibrary website so that librarians can renew books, and create, update, and delete authors using our own 
+    forms (rather than using the admin application).  
+
 
 

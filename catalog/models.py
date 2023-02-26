@@ -47,6 +47,11 @@ class Book(models.Model):
 
     class Meta:
         ordering = ['title', 'author']
+        permissions = (
+            ("can_update_book", "Book Updating"),
+            ("can_delete_book", "Book Deleting"),
+            ("can_create_book", "Book Creating"),
+        )
 
     def display_genre(self):
         """Creates a string for the Genre. This is required to display genre in Admin."""
@@ -109,6 +114,11 @@ class Author(models.Model):
 
     class Meta:
         ordering = ['last_name', 'first_name']
+        permissions = (
+            ("can_update_author", "Author Updating"),
+            ("can_delete_author", "Author Deleting"),
+            ("can_create_author", "Author Creating"),
+        )
 
     def get_absolute_url(self):
         """Returns the url to access a particular author instance."""
