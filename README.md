@@ -49,6 +49,12 @@ https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
     One way to mitigate these problems is to write automated tests, which can easily and reliably be run every 
     time you make a change. This tutorial shows how to automate unit testing of your website using Django's test 
     framework.  
+#11. Deploying Django to production.  
+    Now you've created (and tested) an awesome LocalLibrary website, you're going to want to install it on a public
+    web server so that it can be accessed by library staff and members over the internet. This article provides an 
+    overview of how you might go about finding a host to deploy your website, and what you need to do in order to get
+    your site ready for production.  
+
 
 
 
